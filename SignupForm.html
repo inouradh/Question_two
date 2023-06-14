@@ -1,0 +1,98 @@
+<meta charset="utf-8">
+
+<title>Sign up Form</title>
+
+<meta name="keywords" content="example, JavaScript Form Validation, Sample registration form" />
+
+<meta name="description" content="This document is an example of JavaScript Field label form validation using a sample registration form. " />
+
+<link rel='stylesheet' href='form.css' type='text/css' />
+
+<script src="jsvalidation.js"></script>
+
+</head>
+
+<body bgcolor="#E7DEDC"onload="firstfocus();">
+
+<h2>Sign up Form</h2>
+
+<form name='registration'">
+
+<ul>
+
+<li><label for="username">Full Name* :</label></li>
+
+<li><input type="text" name="fullName" size="37" onblur="ValidateUsername()"/></li>
+
+<li><label for="organization">organization:</label></li>
+
+<li><input type="text" name="organization" size="37" onblur="ValidateOrganization()"/></li>
+
+<li><label for="email">Email address*:</label></li>
+
+<li><input type="text" name="email" size="37" onblur="ValidateEmail()" /></li>
+
+<li><label for="phone">Work Phone:</label></li>
+
+<li><input type="tel" id="phone" name="phone" size="37" ">
+
+<li><label for="phone">Home Phone:</label></li>
+
+<li><input type="tel" id="phone" name="phone" size="37" ">
+
+<li><label for="phone">Cell Phone:</label></li>
+
+<li><input type="tel" id="phone" name="phone" size="37" ">
+
+<li><label for="Fax">Fax:</label></li>
+
+<li><input type="tel" id="Fax" name="Fax" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+
+<li><label for="Address">Address 1*:</label></li>
+
+<li><input type="text" name="address 1" size="37" onblur="alphanumeric()"/></li>
+
+<li><label for="Address">Address 2:</label></li>
+
+<li><input type="text" name="address 2" size="37" onblur="alphanumeric()"/></li>
+
+<li><label for="city">City*:</label></li>
+
+<li><input type="text" name="city" size="37" onblur="ValidateCity()" /></li>
+
+<li><label for="state province">State provinces:</label></li>
+
+<li><input type="text" name="state province" size="37" onblur="ValidateStateProvince()" /></li>
+
+<li><label for="zip">ZIP Code:</label></li>
+
+<li><input type="text" name="zip" size="12" onblur="allnumeric()"/></li>
+
+<li><label for="country">Country*:</label></li>
+
+<li><select name="country" onblur="countryselect()">
+
+<option selected="" value="Default">(Please select a country)</option>
+
+<option value="AF">Australia</option>
+
+<option value="AL">Canada</option>
+
+<option value="DZ">India</option>
+
+<option value="AS">Russia</option>
+
+<option value="AD">USA</option>
+
+</select></li>
+
+ <li><label for="Required field"> * Required field
+
+<li><input type="submit" name="submit" value="Submit" onclick="alert('Congratulations! you are now signed up')" /></li>
+
+
+</ul>
+
+</form>
+
+</body>
